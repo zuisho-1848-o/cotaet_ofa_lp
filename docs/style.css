@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-blue: #44d;
+    --back-white: #fafafa;
+    --word-white: #f5f5f5;
+    --right-blue: #69d;
+    --word-gray: #eee;
+
+    --header-height: 64px;
+    --header-blue: var(--main-blue);
+}
+
+
+
+
+/* ここから header */
+header {
+    height: var(--header-height);
+    background: var(--header-blue);
+    color: var(--word-white);
+    position: fixed;
+    width: 100%;
+    
+}
+
+header nav {
+    display: flex;
+}
+
+#logoBlock, #headerLogo {
+    border-radius: 50%;
+    height: 64px;
+    margin-left: 10px;
+}
+
+#headerNavUl {
+    display: flex;
+    width: calc(70vw - 64px);
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#headerNavUl li {
+    width: 25%;
+    text-align: center;
+    color: var(--word-white);
+    height: var(--header-height);
+    line-height: var(--header-height);
+}
+
+#headerNavUl li a {
+    display: block;
+    cursor: pointer;
+}
+
+#headerNavUl li a:hover{
+    background: var(--right-blue);
+    color: var(--word-gray);
+}
+
+
+
+#headerNavUl li a span {
+    color: var(--word-white);
+}
+
+
+/* ここからmain */
+#topView {
+    padding-top: var(--header-height);
+    display: flex;
+}
+
+#topTextsBlock {
+    width: 40%;
+    padding-left: 50px;
+}
+
+#topTexts {
+    margin-top: calc(50% + 64px);
+    transform: translateY(-50%);
+}
+
+#topTexts h1 {
+    font-size: 64px;
+}
+
+#topTexts h2 {
+    font-size: 32px;
+}
+
+#topImage {
+    width: 60%;
+}
+
+#topImage img {
+    width: 100%;
+}
+
+
+
