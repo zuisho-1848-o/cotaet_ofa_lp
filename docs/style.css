@@ -37,9 +37,10 @@ header {
     height: var(--header-height);
     background: var(--header-blue);
     color: var(--word-white);
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 10;
+    top: 0;
 }
 
 header nav {
@@ -86,9 +87,10 @@ header nav {
 
 /* ここからmain */
 section {
-    margin: 0 30px;
+    margin: 30px;
     margin-bottom: 50px;
     padding: 30px 0;
+    padding-top: 64px;
 }
 
 .sectionTop {
@@ -181,7 +183,6 @@ section {
 
 #price {
     text-align: center;
-    padding: 30px;
 }
 
 #priceTable {
