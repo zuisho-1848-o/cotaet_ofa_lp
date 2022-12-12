@@ -56,13 +56,13 @@ header nav {
 
 #headerNavUl {
     display: flex;
-    width: calc(70vw - 64px);
+    width: calc(50vw - 64px);
     margin-right: 0;
     margin-left: auto;
 }
 
 #headerNavUl li {
-    width: 25%;
+    width: 20%;
     text-align: center;
     color: var(--word-white);
     height: var(--header-height);
